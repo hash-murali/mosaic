@@ -15,3 +15,7 @@ Git branches have names; release tags identify exact commits.
 
 Future updates use four brief labels: Retained, Changed, Known issues, Test next.
 Record the release version, branch, actual result and reason for meaningful changes.
+
+Release reference: `v0.1.0` → `dbf1937` on `main` (local Git; no GitHub remote).
+Next-phase branch: `codex/review-reliability`; implementation plan is in NEXT.md.
+The baseline remains v0.1.0; v0.2.0 is a future target, not a released build.

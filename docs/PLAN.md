@@ -55,6 +55,10 @@ exception was authorized September 30, 2026; see AGENTS.md and the entry below.
 - Actual release verification: final version-labelled Mac executable built and
   all seven synthetic Swift Testing tests passed with zero failures using
   `swift test --scratch-path .build --disable-sandbox`. No dependencies installed.
+- Completed local publication: main commit dbf1937, annotated tag v0.1.0. Created
+  codex/review-reliability for the next phase. GitHub was not published because no
+  remote destination is configured. Added NEXT.md acceptance criteria; current
+  app remains v0.1.0. Next-phase code changes have not been implemented yet.
 
 ## Dependencies
 
