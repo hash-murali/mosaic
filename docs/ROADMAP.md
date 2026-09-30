@@ -1,10 +1,9 @@
-# Release workflow and GitHub migration
+# Release workflow
 
 Reviewed September 30, 2026. Baseline: v0.1.0 “Session Review”, tag
 `v0.1.0`, release commit `dbf1937`. Current branch contains planning only.
-GitHub Issues is the chosen task-tracking system. The backlog below is temporary
-migration material, not a parallel local ticketing system. No GitHub issues have
-been created yet. The existing v0.2.0 target in NEXT.md remains unchanged.
+GitHub Issues is the task-tracking source of truth. No local ticketing system
+is maintained. The v0.2.0 target remains unchanged.
 
 ## Proposed release cycle
 
@@ -24,30 +23,18 @@ previews of the upcoming release; publish v0.4.0 after its acceptance checks.
 The proposed five-patch limit is a POC planning cap, not a reason to release
 unfinished work or defer necessary fixes.
 
-## Immediate tickets: review reliability (existing v0.2.0 target)
+## GitHub tracking
 
-| Local ID | Priority | Issue | Acceptance / dependency |
-| --- | --- | --- | --- |
-| MR-01 | P2 | Preserve per-record unapproved correction drafts | Two pending records retain distinct edits across navigation/import; drafts stay out of search; approval commits and discard removes a draft. Synthetic regression tests plus user GUI check. |
-| MR-02 | P3 | Show status for the selected record | Switching pending/reviewed records never shows stale status from another record. Depends on review-state handling in MR-01. |
-| MR-03 | P2 | Bound image decoding and session memory | Measure with synthetic images, choose documented limits, handle rejection without losing prior records, and verify UI responsiveness and failure paths. |
-| MR-04 | P2 | Validate image orientation | Generated rotated/EXIF fixtures verify decode-to-OCR behavior; document supported orientations and remaining limits. |
-| MR-05 | P3 | Decide multi-window behavior | Choose isolated sessions, shared session, or one-window restriction; document and manually verify the chosen behavior. Scope decision needed before treating this as a defect. |
+[GitHub Issues](https://github.com/hash-murali/mosaic/issues) owns task status,
+priorities, dependencies, and acceptance criteria. The local migration tables
+and IDs have been removed after all ten issues were created and verified.
 
-MR-01 through MR-04 are the existing NEXT.md scope. MR-05 is an additional audit
-follow-up and is not yet committed to that release. Existing seven synthetic
-tests must keep passing; add meaningful tests for changed behavior. Release
-verification also needs user GUI checks because core tests do not verify the UI.
-
-## Subsequent planning tickets (no release assigned)
-
-| Local ID | Issue | Required outcome |
-| --- | --- | --- |
-| MP-01 | Decide persistent storage architecture and threat model | Define vault boundaries, retention/deletion, source/correction provenance, migrations, recovery, encryption/key handling, and authorized data scope before building saved libraries. |
-| MP-02 | Define content-free audit events | Decide which actions need auditing, allowed metadata, retention and access. Personal content must never enter development logs or tickets. No audit logger is implemented yet. |
-| MP-03 | Decide identity and access scope | Describe which future sharing/team capabilities require identities and user/admin/management permissions, with a resource/action permission matrix. Implementation depends on an approved sharing scope. |
-| MP-04 | Plan iPhone/iPad delivery | Define app targets, import flow, platform checks, and accessibility requirements. Package deployment floors are not verified device compatibility. |
-| MP-05 | Define repeatable release checks | Record synthetic tests, applicable GUI/platform checks, known limits, version updates, release notes, and tag verification for each release. |
+Next release: [v0.2.0 — Review Reliability](https://github.com/hash-murali/mosaic/milestone/1).
+The milestone contains four reliability issues and the release-finalization
+issue. Longer-term design work remains in the GitHub backlog. PLAN.md retains
+decisions, milestone summaries, dependencies, completed-work summaries, actual
+test results, risks, and limitations required by AGENTS.md; it does not duplicate
+individual issue status.
 
 ## Required finalization for every version
 
@@ -67,28 +54,15 @@ verification also needs user GUI checks because core tests do not verify the UI.
 This applies to patch and minor releases. It is a required process going forward,
 not automated enforcement or a claim that GitHub cleanup was done for v0.1.0.
 
-## GitHub setup and migration
+## Publication and access
 
 Repository: [hash-murali/mosaic](https://github.com/hash-murali/mosaic) (public).
-The Git remote is configured and main plus the existing annotated v0.1.0 tag
-were published and verified against release commit dbf1937 on September 30, 2026.
-The planning branch is published separately; main remains the exact baseline.
+Origin is configured; main and the annotated v0.1.0 tag were published and
+verified against release commit dbf1937. The planning branch is published
+separately. Current application code remains v0.1.0.
 
-GitHub connector authentication is available, but issue creation returned 403
-“Resource not accessible by integration.” No issues were created. The in-app
-browser is signed out. Migration requires connector Issues write access or a
-user-authenticated browser session; no credentials were inspected or collected.
-The temporary backlog remains until transfer can be verified.
-
-Use release milestones and labels for type/priority/area, and link changes to
-issues. Keep PLAN.md for decisions and actual verification; GitHub Issues owns
-individual task status and acceptance criteria. Only source, synthetic fixtures,
-and project documentation may be published.
-
-After migration is verified, remove the temporary ticket tables and local IDs
-from this file and replace NEXT.md task details with the GitHub milestone link
-and a brief release objective. Do not discard acceptance criteria before they
-are transferred. Maintain PLAN.md for decisions, milestones, dependencies,
-completed-work summaries, actual tests, risks, and limitations as AGENTS.md
-requires; GitHub owns individual task status. No local ticket database or
-tracking application will be built.
+The connector returned 403 for issue creation; the user signed in to the in-app
+browser and migration was completed there. No credentials were inspected or
+collected, and no dependencies installed. Connector write access remains
+unverified; authenticated browser access is the working route. Only source,
+synthetic fixtures, and project documentation may be published.

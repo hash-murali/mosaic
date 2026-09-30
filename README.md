@@ -24,3 +24,8 @@ the synthetic core tests. Swift may require permission to write compiler caches.
 
 Read [AGENTS.md](AGENTS.md) for the project boundaries and
 [docs/PLAN.md](docs/PLAN.md) for decisions, milestones, verification, and risks.
+
+Task tracking: [GitHub Issues](https://github.com/hash-murali/mosaic/issues).
+Next release: [v0.2.0 milestone](https://github.com/hash-murali/mosaic/milestone/1).
+Every release ends with tests, an audit, and issue reorganization; see
+[release workflow](docs/ROADMAP.md).

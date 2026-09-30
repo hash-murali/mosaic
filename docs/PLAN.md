@@ -283,3 +283,19 @@ export enforcement remain unimplemented.
 - Documentation whitespace checks passed. GUI tests were not rerun. Existing
   v0.1.0 audit remains applicable; required GitHub ticket reorganization remains
   pending because no tickets could be created.
+
+## September 30, 2026 — GitHub backlog migration completed
+
+- User signed into the in-app browser after connector issue writes returned 403.
+  Created and verified ten GitHub issues with acceptance criteria and synthetic
+  data boundaries. No issue content contains personal test data.
+- Created milestone #1, v0.2.0 — Review Reliability, and verified its five issues:
+  the four reliability tasks and release-finalization task. Five later design
+  items remain unassigned in the backlog. No deadline invented.
+- Removed temporary local ticket tables/IDs and replaced NEXT.md task details
+  with the GitHub milestone link and objective. PLAN.md remains the required
+  decision/verification record, not a second issue-status tracker.
+- Planning branch publication succeeded. No application code changed; prior
+  seven-test normal-access pass remains applicable. Documentation whitespace
+  checks passed. GitHub connector write permission remains unverified, while
+  authenticated browser issue/milestone operations succeeded.
