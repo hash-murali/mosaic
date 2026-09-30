@@ -37,6 +37,23 @@ iPad, and Mac.
 
 ## Work tracking and verification
 
+- Use GitHub Issues for task status, priorities, dependencies, and acceptance
+  criteria. Do not maintain a duplicate local ticketing system.
+- Name project chats `<target version> — <topic>`; use the intended version for
+  design/planning, and the affected release for maintenance. Rename the active
+  chat when its target changes. Do not rename unrelated chats automatically.
+- Finalize every stable version with relevant tests, a scoped audit, and GitHub
+  ticket reorganization. Publish each stable version as its own GitHub Release
+  tied to an immutable annotated version tag; never move a released tag.
+- Record every design decision with an ID/title, target version, rationale,
+  status, proposer, approver attribution, approval date/evidence, and linked
+  issue/PR where applicable. See docs/DECISIONS.md. Do not label a proposal as
+  human-approved without evidence or invent approval for legacy decisions.
+- Use focused branches for independent changes, named
+  `codex/v<target-version>-<issue-number>-<topic>` where practical. Keep issue/PR
+  links for traceability. Add release or maintenance branches only when needed;
+  tags and GitHub Releases preserve stable versions without branch duplication.
+
 - Maintain `docs/PLAN.md` with decisions, milestones, dependencies, completed
   work, actual test results, risks, and limitations.
 - Report planned controls separately from controls that are actually implemented.

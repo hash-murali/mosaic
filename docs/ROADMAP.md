@@ -48,18 +48,48 @@ individual issue status.
    revise priorities/dependencies, and move unfinished work to the next milestone
    or backlog with a reason. Blocking findings prevent release finalization.
 4. Reconcile version, release notes, audit evidence, and milestone scope before
-   tagging/publishing. Link the release to its audit and milestone; close the
-   milestone once every issue has an explicit disposition.
+   tagging/publishing. Publish a separate GitHub Release for each stable version
+   using its immutable annotated tag. Link its audit and milestone, list actual
+   tests and known limitations, and close the milestone once every issue has an
+   explicit disposition. Keep older releases available; do not overwrite them.
 
 This applies to patch and minor releases. It is a required process going forward,
 not automated enforcement or a claim that GitHub cleanup was done for v0.1.0.
+
+## Chat, decision, and branch traceability
+
+Project chat titles use `<target version> — <topic>`, for example
+`v0.2.0 — Review reliability` or `v0.3.0 — Storage design`. Maintenance chats
+use the affected release. Rename a chat when its intended version changes; use
+`version TBD — <topic>` when a version is genuinely undecided. The active chat
+is `v0.2.0 — Release planning and governance`. Other chats have not been renamed.
+
+Every design decision records its proposer and approver, approval date, evidence,
+target version, rationale, and status in DECISIONS.md. A GitHub handle is adequate
+attribution; no legal name is required. Agent recommendations remain proposals
+unless approved by the human or explicitly covered by delegated authority.
+Routine implementation choices may use that existing authority with its source
+recorded; this does not require asking again for every reversible edit. Legacy
+approval without evidence stays unknown. Significant decisions also link to an
+issue and PR, whose discussion records the approval at work level.
+
+Use focused branches for independent issue work, preferably
+`codex/v0.2.0-1-review-drafts`. Small related changes can share a branch; do not
+create branches simply to increase their count. Main is the integration branch;
+each stable release is pinned by its tag and GitHub Release. Create a release
+branch for stabilization when next-version development overlaps, or a maintenance
+branch when supporting an older release. Existing `codex/review-reliability`
+remains the current branch; historical names and release tags are preserved.
+Branches and policy are traceability tools, not enforced branch protection.
 
 ## Publication and access
 
 Repository: [hash-murali/mosaic](https://github.com/hash-murali/mosaic) (public).
 Origin is configured; main and the annotated v0.1.0 tag were published and
 verified against release commit dbf1937. The planning branch is published
-separately. Current application code remains v0.1.0.
+separately. Current application code remains v0.1.0. Its separate
+[GitHub Release](https://github.com/hash-murali/mosaic/releases/tag/v0.1.0)
+was published with scoped notes, actual verification, and audit links.
 
 The connector returned 403 for issue creation; the user signed in to the in-app
 browser and migration was completed there. No credentials were inspected or

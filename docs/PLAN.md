@@ -299,3 +299,29 @@ export enforcement remain unimplemented.
   seven-test normal-access pass remains applicable. Documentation whitespace
   checks passed. GitHub connector write permission remains unverified, while
   authenticated browser issue/milestone operations succeeded.
+
+## September 30, 2026 — version and approval traceability
+
+- Approver for the new requirements: human project owner in this chat, attributed
+  by repository handle hash-murali. Evidence: user requested separate stable
+  publications, versioned chat titles, named design approvers and branches as
+  needed. D-003 in DECISIONS.md records requirements separately from Codex's
+  routine workflow conventions adopted under the authorized planning scope.
+- Added persistent instructions to AGENTS.md and conventions to ROADMAP.md.
+  Added DECISIONS.md with proposer/approver/date/evidence/status fields, links
+  and explicit unknown legacy approvals. No production role/approval enforcement
+  or branch protection was added.
+- Renamed the active chat to v0.2.0 — Release planning and governance. Policy
+  applies to future project chats; other existing chats were not inspected or
+  renamed. Application version remains 0.1.0; next target remains v0.2.0.
+- Published a separate GitHub Release, v0.1.0 — Session Review, against the
+  existing v0.1.0 tag at dbf1937. Browser verified the public release title, tag,
+  commit, scoped notes, audit link and known limits. No binaries attached; GitHub
+  supplies source archives. Existing source/tag was not changed.
+- Updated GitHub issue #10 with additional release/approval/chat/branch
+  acceptance requirements and approval attribution. Issue remains open for
+  v0.2.0 finalization.
+- Documentation-only changes: application tests not rerun; prior normal-access
+  seven-test pass remains applicable. git diff --check and separate new-file
+  whitespace validation passed. No dependencies installed or personal samples
+  accessed.
