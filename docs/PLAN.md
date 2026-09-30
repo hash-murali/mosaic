@@ -60,6 +60,24 @@ exception was authorized September 30, 2026; see AGENTS.md and the entry below.
   remote destination is configured. Added NEXT.md acceptance criteria; current
   app remains v0.1.0. Next-phase code changes have not been implemented yet.
 
+## September 30, 2026 — release-cycle and pending-work review
+
+- Confirmed VERSION is 0.1.0, the local v0.1.0 tag exists, and the working tree
+  was clean at review start. Current branch is codex/review-reliability with a
+  planning commit after the release; next-phase features remain unimplemented.
+- Reviewed NEXT.md and AUDIT.md; prepared local ticket backlog in ROADMAP.md.
+  Existing next target remains v0.2.0. Proposed release workflow uses milestones
+  for preparation/features/stabilization and patches for verified baseline fixes.
+- Architecture, storage controls, audit events, and future role permissions are
+  planning items, not implemented security features. Their scope and release
+  assignments remain undecided.
+- GitHub connection and publishing are deferred to the user's later setup step.
+  No remote is configured; gh is unavailable. Destination and visibility are
+  required. No dependency installation or external publication was performed.
+- Verification: documentation-only change; application tests were not rerun.
+  `git diff --check` passed; the new ROADMAP.md also passed a separate trailing
+  whitespace check.
+
 ## Dependencies
 
 - The next milestone depends on Apple development tools, the simulator, and the
@@ -230,3 +248,38 @@ export enforcement remain unimplemented.
   quality, review usability, storage design, and iOS compatibility are unverified.
 - If personal data becomes visible, work must stop without quoting it and the
   boundary problem must be reported.
+
+## September 30, 2026 — GitHub tracking and release finalization decision
+
+- User selected GitHub Issues as the task-tracking system and required every
+  version to end with an audit and ticket reorganization. Added the required
+  release checklist to ROADMAP.md; it is a process requirement, not automated
+  enforcement.
+- GitHub connector authentication verified for hash-murali. Local Git still has
+  no remote; destination is awaiting user input. No issues or releases published.
+- Local backlog tables are temporary migration material. Remove duplicated task
+  details after GitHub transfer is verified; retain PLAN.md decision/test/risk
+  records required by AGENTS.md. No local ticketing application is needed.
+- Documentation-only update: application tests not rerun. Whitespace checks
+  passed for tracked changes and ROADMAP.md.
+
+## September 30, 2026 — GitHub baseline publication
+
+- User selected https://github.com/hash-murali/mosaic.git. Verified it was public,
+  empty, and the authenticated account had push/admin repository access.
+- Configured origin and published main plus the existing annotated v0.1.0 tag.
+  Remote main and the peeled tag both resolve to
+  dbf1937503e8446598979a0147b184a24d9f251f. Stable source/version was unchanged.
+- Prepared the planning branch for separate publication; no feature changes.
+- GitHub issue creation returned integration permission error 403; none created.
+  Browser fallback is signed out. User asked to provide connector Issues write
+  access or sign in. Retain temporary backlog until verified migration; no
+  duplicate local ticketing application added. Milestone setup is also pending.
+- Actual verification: initial sandbox attempt failed compiler-cache access;
+  repository-local cache retry passed five core tests but both Vision OCR tests
+  failed with nilError. Normal-access rerun of swift test --scratch-path .build
+  --disable-sandbox built the executable and passed all seven synthetic tests
+  with zero failures. No personal samples or dependencies were accessed.
+- Documentation whitespace checks passed. GUI tests were not rerun. Existing
+  v0.1.0 audit remains applicable; required GitHub ticket reorganization remains
+  pending because no tickets could be created.
