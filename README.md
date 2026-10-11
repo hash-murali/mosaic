@@ -6,7 +6,7 @@ See [brief history](docs/HISTORY.md) and [code audit](docs/AUDIT.md).
 Project Mosaic is the codename for a local-first personal screenshot intelligence
 system for iPhone, iPad, and Mac.
 
-Current foundation candidate is **v0.1.1-rc.1 — Protected Mac Foundation**,
+Published foundation candidate: [v0.1.1-rc.1 — Protected Mac Foundation](https://github.com/hash-murali/mosaic/releases/tag/v0.1.1-rc.1),
 for synthetic testing only. Remaining validation is explicitly deferred in
 [the consolidated inspection checklist](docs/evidence/releases/v0.1.1/DEFERRED-VALIDATION.md).
 Next development is v0.1.2; this candidate is not a fully validated stable release.

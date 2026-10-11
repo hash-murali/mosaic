@@ -19,3 +19,14 @@ Record the release version, branch, actual result and reason for meaningful chan
 Release reference: `v0.1.0` → `dbf1937` on `main` (local Git; no GitHub remote).
 Next-phase branch: `codex/review-reliability`; implementation plan is in NEXT.md.
 The baseline remains v0.1.0; v0.2.0 is a future target, not a released build.
+
+## October11,2026 — v0.1.1-rc.1 Protected Mac Foundation
+
+Published synthetic-only prerelease from immutable annotated tag at0ad4b1f.
+[Release](https://github.com/hash-murali/mosaic/releases/tag/v0.1.1-rc.1),
+[open PR11](https://github.com/hash-murali/mosaic/pull/11),
+[deferred validation12](https://github.com/hash-murali/mosaic/issues/12).
+59 tests/native/probes/process checks pass; owner explicitly defers independent
+recovery/fault validation. Main merge rejected by automatic approval review due
+to conditional stability approval; no bypass. Stable/latest v0.1.0 preserved.
+Next planned development v0.1.2; consolidated future validation reminder active.

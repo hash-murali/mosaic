@@ -1,5 +1,7 @@
 # Project Mosaic plan
 
+- [v0.1.1-20261011-publish-75](evidence/builds/v0.1.1-20261011-publish-75.md): Immutable candidate prerelease published. PASS: annotated v0.1.1-rc.1 tag pushed and GitHub prerelease published from commit0ad4b1f1fe5e93c58fa024376c3d876cdaceb892; browser verifies Pre-release label, existing-tag commit and explicit deferred validation notes. Release URL https://github.com/hash-murali/mosaic/releases/tag/v0.1.1-rc.1. PR11 remains OPEN, main merge automatically rejected and not bypassed. Issue12 checklist/reminder and issue10 dispositions complete; stable v0.1.0 remains unchanged/latest. Source-only publication; no binaries/runtime/owner documents. Documentation-only: app tests not applicable,59-test current candidate evidence70/71 preserved. Screenshot proof saved outside Git. Next v0.1.2 handoff ready; main merge needs explicit deferred-risk approval.
+
 - [v0.1.1-20261011-publish-74](evidence/builds/v0.1.1-20261011-publish-74.md): Main merge blocked; branch-only candidate release. BLOCKED: automatic approval review rejects PR11 merge into main because earlier authorization was conditional on stability and native/recovery/fault/memory checks remain deferred. No workaround, command-line merge or main push attempted. Main remains dbf1937503e8446598979a0147b184a24d9f251f; candidate branch cf02e78. Safer branch-only prerelease publication authorized by current user request continues. Explicit approval needed to merge with deferred gates. Documentation-only; no new app tests applicable. API403 history preserved; browser PR11/issue12/audit issue10 succeeded. Reminder/checklist installed; runtime and owner documents preserved/excluded.
 
 - [v0.1.1-20261011-publish-73](evidence/builds/v0.1.1-20261011-publish-73.md): GitHub browser publication and reconciliation. PASS: candidate commits aee0439/e42dc16 pushed; authorized signed-in browser creates PR11 and deferred-validation issue12, then records explicit dispositions for existing issues1-10 on issue10. API403 history preserved; browser succeeds without changing connection permissions. No unsupported closure of partially accepted issues. Documentation-only: no fresh app tests needed; source unchanged from59-test/native candidate70/71. Staged whitespace fixed and pack checksum updated; pack validator PASS24checks. Main merge/tag/release pending.
@@ -1018,3 +1020,11 @@ records backlog dispositions. Auto-review rejects main merge because existing
 permission was conditional on stable validation. Keep main untouched; branch-only
 rc.1 prerelease is the safe alternative. Owner must explicitly approve merging
 with deferred gates before that final action. No bypass attempted.
+
+## October11 — Publication complete, main merge awaiting explicit approval
+
+Candidate prerelease v0.1.1-rc.1 published at immutable0ad4b1f tag, PR11 open.
+Issue12 and reminder retain deferred checks; issue10 records actual dispositions.
+Main remains v0.1.0 commitdbf1937 after merge rejection; no alternative merge/push
+used. Explicit approval to integrate unvalidated candidate into main is required.
+Post-tag evidence commits never move released tag. v0.1.2 design handoff is ready.
