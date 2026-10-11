@@ -35,3 +35,5 @@ persistence authorization; no stable recovery/fault guarantee until verified.
 Reminder automation: mosaic-deferred-validation-review, Mondays10:00 local time,
 quiet until v0.4 or a ready batch; notify once for newly actionable state.
 Artificial-disk mounting still needs its specific approval (FAULT-DRILL.md).
+
+October11 publication traceability: [candidate PR11](https://github.com/hash-murali/mosaic/pull/11), [deferred validation issue12](https://github.com/hash-murali/mosaic/issues/12), [audit/backlog dispositions on issue10](https://github.com/hash-murali/mosaic/issues/10). API writes failed403; authorized browser publication succeeded. Deferred checks remain unpassed.

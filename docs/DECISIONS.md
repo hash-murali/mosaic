@@ -589,3 +589,5 @@ data restrictions remain in force regardless of this documentation gap.
 - Limits: no similarity detection; recompressed, cropped or resized inputs can
   differ. No cross-window/persistent matching. Fingerprints are derived data,
   never logged, uploaded or saved. Canonical rendering needs temporary memory.
+
+October11 publication traceability: [candidate PR11](https://github.com/hash-murali/mosaic/pull/11), [deferred validation issue12](https://github.com/hash-murali/mosaic/issues/12), [audit/backlog dispositions on issue10](https://github.com/hash-murali/mosaic/issues/10). API writes failed403; authorized browser publication succeeded. Deferred checks remain unpassed.

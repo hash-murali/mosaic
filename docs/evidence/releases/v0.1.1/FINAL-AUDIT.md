@@ -45,3 +45,5 @@ Final current verification: rc70/71 records59 tests, unsigned native build,
 two publication/fourprocess scenarios,24pack/nineSQL checks and clean diff.
 No P0/P1 source finding remains in reviewed scope after fixes. Required deferred
 native/fault evidence is explicitly absent, not a security certification.
+
+October11 publication traceability: [candidate PR11](https://github.com/hash-murali/mosaic/pull/11), [deferred validation issue12](https://github.com/hash-murali/mosaic/issues/12), [audit/backlog dispositions on issue10](https://github.com/hash-murali/mosaic/issues/10). API writes failed403; authorized browser publication succeeded. Deferred checks remain unpassed.

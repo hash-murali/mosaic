@@ -43,3 +43,5 @@ priorities, dependencies and acceptance criteria. The existing
 [v0.2.0 milestone](https://github.com/hash-murali/mosaic/milestone/1) still requires
 remote reconciliation; it does not represent the newly approved v0.1.1 scope.
 See ROADMAP.md for finalization. No parallel local ticket tracker is maintained.
+
+October11 publication traceability: [candidate PR11](https://github.com/hash-murali/mosaic/pull/11), [deferred validation issue12](https://github.com/hash-murali/mosaic/issues/12), [audit/backlog dispositions on issue10](https://github.com/hash-murali/mosaic/issues/10). API writes failed403; authorized browser publication succeeded. Deferred checks remain unpassed.
