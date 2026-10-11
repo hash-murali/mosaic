@@ -57,5 +57,19 @@ iPad, and Mac.
 - Maintain `docs/PLAN.md` with decisions, milestones, dependencies, completed
   work, actual test results, risks, and limitations.
 - Report planned controls separately from controls that are actually implemented.
+- After every new development build or build attempt (including failed/blocked
+  attempts), update the active version's inspection sheet for the current source
+  and changed behavior. Record a uniquely identified evidence entry under
+  `docs/evidence/builds/`, link it from `docs/AUDIT.md`, and summarize results in
+  `docs/PLAN.md`. Record branch/commit plus dirty-source fingerprint or equivalent
+  build identity, commands/toolchain, actual test counts, PASS/FAIL/BLOCKED/PENDING/
+  NOT IMPLEMENTED outcomes, audit scope, findings and limitations. Preserve prior
+  entries; append dated follow-up evidence rather than silently replacing results.
+  Distinguish agent-verified results from owner-reported results and historical
+  evidence. Never carry a passing checkbox forward for changed behavior without
+  revalidation. Documentation-only edits record checks and app tests not applicable.
+  Evidence contains synthetic results and sanitized error codes only; no personal
+  content, raw private logs, credentials or runtime content logging. GitHub Issues
+  continues to own task status; these files are evidence, not a second ticket system.
 - Run relevant tests after changes. Record actual results and clearly state when
   tests were not run or are not applicable.

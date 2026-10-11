@@ -11,6 +11,7 @@ DerivedData/
 build/
 Build/
 .build/
+.verification/
 Archives/
 archives/
 *.xcarchive/
@@ -76,3 +77,9 @@ private-data/
 private_data/
 personal-data/
 personal_data/
+
+# Local shutdown and cleaning checklist
+/CLEANUP.md
+
+# SwiftPM per-user IDE workspace
+.swiftpm/

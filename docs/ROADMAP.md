@@ -1,9 +1,16 @@
 # Release workflow
 
+Current scope override, October 2, 2026: **v0.1.1 — Protected Mac Foundation**
+(D-008). It adopts the development pack's protected-foundation gates; existing
+v0.1.0 remains the session demo. Initial OS targets and conditional older-version
+policy are D-009. Older statements below describe the September 30 planning
+baseline; its v0.2.0 milestone grouping awaits GitHub reconciliation.
+
 Reviewed September 30, 2026. Baseline: v0.1.0 “Session Review”, tag
-`v0.1.0`, release commit `dbf1937`. Current branch contains planning only.
+`v0.1.0`, release commit `dbf1937`. That statement describes the historical planning baseline; current branch now
+contains protected integration and verification work.
 GitHub Issues is the task-tracking source of truth. No local ticketing system
-is maintained. The v0.2.0 target remains unchanged.
+is maintained. Current target is v0.1.1; v0.1.2 holds the approved later visual redesign.
 
 ## Proposed release cycle
 
@@ -37,6 +44,13 @@ test results, risks, and limitations required by AGENTS.md; it does not duplicat
 individual issue status.
 
 ## Required finalization for every version
+
+Every development build/attempt also refreshes the active inspection sheet,
+adds a uniquely identified sanitized record under `docs/evidence/builds/`, links
+it from AUDIT.md and records its summary in PLAN.md. Include source/build identity,
+actual test results, pending GUI checks and scoped findings. Failed attempts are
+recorded as BLOCKED/FAIL, never as tested builds. Follow-up owner results are dated
+and attributed; historical passes never verify changed source automatically.
 
 1. Run relevant synthetic tests and applicable user GUI/platform checks. Record
    actual results and untested limits.

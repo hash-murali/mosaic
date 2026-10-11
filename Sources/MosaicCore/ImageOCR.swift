@@ -8,6 +8,7 @@ public enum ImageOCR {
         _ image: CGImage,
         orientation: CGImagePropertyOrientation = .up
     ) throws -> SourceObservation {
+        try BoundedImageImport.validateDimensions(width: image.width, height: image.height)
         let request = VNRecognizeTextRequest()
         request.recognitionLevel = .accurate
         request.recognitionLanguages = ["en-US"]

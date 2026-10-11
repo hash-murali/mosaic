@@ -38,4 +38,13 @@ func blankSyntheticImageHasNoRecognizedText() throws {
     let observation = try ImageOCR.recognize(syntheticImage(text: ""))
     #expect(observation.text.isEmpty)
 }
+
+@Test @MainActor
+func syntheticPixelFingerprintsAreStableAndDistinguishSources() throws {
+    let first = try syntheticImage(text: "MOSAIC SYNTHETIC TRAIN 1900")
+    let same = try syntheticImage(text: "MOSAIC SYNTHETIC TRAIN 1900")
+    let different = try syntheticImage(text: "MOSAIC SYNTHETIC FERRY 2100")
+    #expect(try ImageFingerprint.make(first) == ImageFingerprint.make(same))
+    #expect(try ImageFingerprint.make(first) != ImageFingerprint.make(different))
+}
 #endif

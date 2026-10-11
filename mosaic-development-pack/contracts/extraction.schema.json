@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mosaic extraction candidates",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "category", "suggested_title", "summary", "summary_evidence", "entities", "claims", "actions", "needs_review"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "category": {"enum": ["entertainment", "reading", "college", "immigration", "technology", "other"]},
+    "suggested_title": {"type": "string", "maxLength": 300},
+    "summary": {"type": "string", "maxLength": 2000},
+    "summary_evidence": {"type": "array", "maxItems": 30, "items": {"$ref": "#/$defs/evidence"}},
+    "entities": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/entity"}},
+    "claims": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/claim"}},
+    "actions": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/action"}},
+    "needs_review": {"type": "array", "maxItems": 30, "items": {"type": "string", "minLength": 1, "maxLength": 300}}
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["observation_id", "start", "end", "quote"],
+      "properties": {
+        "observation_id": {"type": "string", "format": "uuid"},
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 1},
+        "quote": {"type": "string", "minLength": 1, "maxLength": 3000}
+      }
+    },
+    "entity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["local_id", "name", "type", "intent", "evidence"],
+      "properties": {
+        "local_id": {"type": "string", "pattern": "^e[1-9][0-9]*$"},
+        "name": {"type": "string", "minLength": 1, "maxLength": 300},
+        "type": {"enum": ["show", "movie", "anime", "manga", "manhwa", "book", "topic", "product", "organization", "other"]},
+        "intent": {"enum": ["watch_later", "read_later", "research", "reference", "unknown"]},
+        "evidence": {"type": "array", "minItems": 1, "maxItems": 30, "items": {"$ref": "#/$defs/evidence"}}
+      }
+    },
+    "claim": {
+      "type": "object", "additionalProperties": false,
+      "required": ["local_id", "statement", "evidence"],
+      "properties": {
+        "local_id": {"type": "string", "pattern": "^c[1-9][0-9]*$"},
+        "statement": {"type": "string", "minLength": 1, "maxLength": 2000},
+        "evidence": {"type": "array", "minItems": 1, "maxItems": 30, "items": {"$ref": "#/$defs/evidence"}}
+      }
+    },
+    "action": {
+      "type": "object", "additionalProperties": false,
+      "required": ["title", "date_expression", "evidence"],
+      "properties": {
+        "title": {"type": "string", "minLength": 1, "maxLength": 300},
+        "date_expression": {"type": ["string", "null"], "maxLength": 300},
+        "evidence": {"type": "array", "minItems": 1, "maxItems": 30, "items": {"$ref": "#/$defs/evidence"}}
+      }
+    }
+  }
+}

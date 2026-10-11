@@ -1,0 +1,34 @@
+# Private runtime data must remain outside the repository.
+private-data/
+vaults/
+real-fixtures/
+backups/
+exports/
+diagnostics/
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-wal
+*.db-shm
+*.mosaicbackup
+*.mosaicexport
+*.key
+*.p12
+*.mobileprovision
+.env
+.env.*
+!.env.example
+# Platform and build outputs
+.DS_Store
+DerivedData/
+Archives/
+.build/
+build/
+xcuserdata/
+*.xcuserstate
+__pycache__/
+.venv/
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+# Keep Package.resolved and synthetic examples tracked.
