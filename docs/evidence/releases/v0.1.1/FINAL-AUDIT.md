@@ -47,3 +47,12 @@ No P0/P1 source finding remains in reviewed scope after fixes. Required deferred
 native/fault evidence is explicitly absent, not a security certification.
 
 October11 publication traceability: [candidate PR11](https://github.com/hash-murali/mosaic/pull/11), [deferred validation issue12](https://github.com/hash-murali/mosaic/issues/12), [audit/backlog dispositions on issue10](https://github.com/hash-murali/mosaic/issues/10). API writes failed403; authorized browser publication succeeded. Deferred checks remain unpassed.
+
+## October11 follow-up — explicit deferred-risk approval and completed merge
+
+Owner explicitly approved merging PR11 despite deferred recovery/storage/memory/
+native-device validation. Original rejection is preserved as history; approval
+resolves its authorization condition, not the validation gaps. Main fast-forward
+90fad52 pushed normally,59 merged-source tests PASS atmain76; GitHub PR11 Merged.
+Immutable rc.1 tag stays0ad4b1f; stable v0.1.0 unchanged. Deferred issue12/reminder
+remain open. Next development v0.1.2 content-first workspace can start from main.

@@ -24,3 +24,12 @@ Next planned design is v0.1.2 content-first UI/icon actions/separate edit task w
 
 Source release only. No unsigned app binary, runtime vault, backup, key, personal
 image or per-user IDE state included. Existing v0.1.0 tag/release remains immutable.
+
+## October11 follow-up — explicit deferred-risk approval and completed merge
+
+Owner explicitly approved merging PR11 despite deferred recovery/storage/memory/
+native-device validation. Original rejection is preserved as history; approval
+resolves its authorization condition, not the validation gaps. Main fast-forward
+90fad52 pushed normally,59 merged-source tests PASS atmain76; GitHub PR11 Merged.
+Immutable rc.1 tag stays0ad4b1f; stable v0.1.0 unchanged. Deferred issue12/reminder
+remain open. Next development v0.1.2 content-first workspace can start from main.

@@ -1,5 +1,7 @@
 # Project Mosaic plan
 
+- [v0.1.1-20261011-main-76](evidence/builds/v0.1.1-20261011-main-76.md): Explicitly approved candidate integrated into main. PASS: owner explicitly answers Approve candidate merge with deferred validation, resolving prior conditional-authorization rejection. Local main fast-forward90fad5202b4de34e52a544327759433c37c5328e;fresh full SwiftPM build6.10 seconds59tests zerofailures;normal non-force main push succeeds. Output .verification/main-merged-tests-20261011.txt; full local-cache command. GitHub browser verifies PR11 Merged ninecommits. No deferred gate passed by inference. Native app source unchanged from candidate70/71; no extra native rebuild needed. Annotated rc.1 still resolves0ad4b1f; stable v0.1.0 unchanged. Post-merge documentation receipt to follow; runtime/owner/IDE files preserved.
+
 - [v0.1.1-20261011-publish-75](evidence/builds/v0.1.1-20261011-publish-75.md): Immutable candidate prerelease published. PASS: annotated v0.1.1-rc.1 tag pushed and GitHub prerelease published from commit0ad4b1f1fe5e93c58fa024376c3d876cdaceb892; browser verifies Pre-release label, existing-tag commit and explicit deferred validation notes. Release URL https://github.com/hash-murali/mosaic/releases/tag/v0.1.1-rc.1. PR11 remains OPEN, main merge automatically rejected and not bypassed. Issue12 checklist/reminder and issue10 dispositions complete; stable v0.1.0 remains unchanged/latest. Source-only publication; no binaries/runtime/owner documents. Documentation-only: app tests not applicable,59-test current candidate evidence70/71 preserved. Screenshot proof saved outside Git. Next v0.1.2 handoff ready; main merge needs explicit deferred-risk approval.
 
 - [v0.1.1-20261011-publish-74](evidence/builds/v0.1.1-20261011-publish-74.md): Main merge blocked; branch-only candidate release. BLOCKED: automatic approval review rejects PR11 merge into main because earlier authorization was conditional on stability and native/recovery/fault/memory checks remain deferred. No workaround, command-line merge or main push attempted. Main remains dbf1937503e8446598979a0147b184a24d9f251f; candidate branch cf02e78. Safer branch-only prerelease publication authorized by current user request continues. Explicit approval needed to merge with deferred gates. Documentation-only; no new app tests applicable. API403 history preserved; browser PR11/issue12/audit issue10 succeeded. Reminder/checklist installed; runtime and owner documents preserved/excluded.
@@ -1028,3 +1030,12 @@ Issue12 and reminder retain deferred checks; issue10 records actual dispositions
 Main remains v0.1.0 commitdbf1937 after merge rejection; no alternative merge/push
 used. Explicit approval to integrate unvalidated candidate into main is required.
 Post-tag evidence commits never move released tag. v0.1.2 design handoff is ready.
+
+## October11 follow-up — explicit deferred-risk approval and completed merge
+
+Owner explicitly approved merging PR11 despite deferred recovery/storage/memory/
+native-device validation. Original rejection is preserved as history; approval
+resolves its authorization condition, not the validation gaps. Main fast-forward
+90fad52 pushed normally,59 merged-source tests PASS atmain76; GitHub PR11 Merged.
+Immutable rc.1 tag stays0ad4b1f; stable v0.1.0 unchanged. Deferred issue12/reminder
+remain open. Next development v0.1.2 content-first workspace can start from main.

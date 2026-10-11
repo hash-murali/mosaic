@@ -30,3 +30,12 @@ Published synthetic-only prerelease from immutable annotated tag at0ad4b1f.
 recovery/fault validation. Main merge rejected by automatic approval review due
 to conditional stability approval; no bypass. Stable/latest v0.1.0 preserved.
 Next planned development v0.1.2; consolidated future validation reminder active.
+
+## October11 follow-up — explicit deferred-risk approval and completed merge
+
+Owner explicitly approved merging PR11 despite deferred recovery/storage/memory/
+native-device validation. Original rejection is preserved as history; approval
+resolves its authorization condition, not the validation gaps. Main fast-forward
+90fad52 pushed normally,59 merged-source tests PASS atmain76; GitHub PR11 Merged.
+Immutable rc.1 tag stays0ad4b1f; stable v0.1.0 unchanged. Deferred issue12/reminder
+remain open. Next development v0.1.2 content-first workspace can start from main.

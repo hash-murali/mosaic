@@ -591,3 +591,8 @@ data restrictions remain in force regardless of this documentation gap.
   never logged, uploaded or saved. Canonical rendering needs temporary memory.
 
 October11 publication traceability: [candidate PR11](https://github.com/hash-murali/mosaic/pull/11), [deferred validation issue12](https://github.com/hash-murali/mosaic/issues/12), [audit/backlog dispositions on issue10](https://github.com/hash-murali/mosaic/issues/10). API writes failed403; authorized browser publication succeeded. Deferred checks remain unpassed.
+
+D025 approval follow-up October11: owner replies "Approve candidate merge with
+deferred validation" to the specific PR11/main risk question. Candidate integrated
+without force; main76 proves59 tests. This accepts sequencing/integration risk,
+not stability, completion of deferred checks or personal-data persistence.
