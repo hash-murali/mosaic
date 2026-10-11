@@ -1,7 +1,7 @@
 ---
 name: Feature or engineering task
 about: A bounded Mosaic implementation outcome
-title: 'MOS-xxx ' 
+title: 'MOS-xxx '
 labels: ''
 assignees: ''
 ---

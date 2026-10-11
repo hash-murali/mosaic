@@ -1,3 +1,7 @@
+Current follow-up [v0.1.1-20261011-publish-72](evidence/builds/v0.1.1-20261011-publish-72.md): Candidate commit push and API limitations.
+PASS: audited synthetic publication boundary scan184 files, commit aee0439 pushed to origin/codex/v0.1.1-1-review-drafts. GitHub issue/PR creation API403 remains BLOCKED; no PR created. Staged diff check found preexisting trailing whitespace in newly tracked inspection/pack templates; follow-up strips whitespace and updates pack checksum manifest. Documentation-only follow-up, app tests not applicable;59-test/native/probe/process evidence unchanged. No owner private inspection document, runtime data or IDE state committed. Candidate unverified checks remain deferred; stable tag not claimed.
+Prior checkmarks do not accept changed UI. Native shared-workspace revalidation pending.
+
 Current follow-up [v0.1.1-20261011-rc-71-native](evidence/builds/v0.1.1-20261011-rc-71-native.md): Final candidate audit and native checks.
 PASS: current unsigned native xcodebuild;two publication probes;four process scenarios;24 development-pack checks and9 logical-schema checks;git diff --check. Commands native as launch68, python3 Tests/RegressionProbes/verify_open_publication.py, .build/debug/MosaicRecoveryCheck, python3 mosaic-development-pack/scripts/validate_pack.py, python3 mosaic-development-pack/database/check_logical_schema.py. Output .verification/rc-final-native-20261011.txt; Debug app-bearing dylib SHA25625d6cbec349aa14848394af47164c3cb5e4b262213e45631acd7b421d7574bab. Scoped FINAL-AUDIT.md complete with source-only review/limits. GitHub deferred issue create403; ticket reorganization BLOCKED, not completed. Owner authorizes commits/publication to move version with deferred checks; candidate label preserves remaining validation risks.
 Prior checkmarks do not accept changed UI. Native shared-workspace revalidation pending.
@@ -405,7 +409,7 @@ only to the session demo; there are no iPhone/iPad app targets to inspect yet.
   o->make this behavior user preference like switch to turn on and off in user settings
 - [x] B06 **Empty correction:** Fresh session; approve Train with correction
   enabled and empty. `train` finds nothing; source text is not silently restored.
-  O-> but i think empty information should not exist at all. what use of extracting info and stroing empty info. i rather discard image 
+  O-> but i think empty information should not exist at all. what use of extracting info and stroing empty info. i rather discard image
 - [x] B07 **Pending duplicate:** Reload Train with an unapproved draft. One
   pending record remains; draft/toggle survive and existing record reopens.
   0-> case study a the bottom about this
@@ -677,7 +681,7 @@ Current demo manual checks (generated PNG/JPEG only):
 - [x] H12 Retention limit (32 records / 256 MiB decoded images) refuses additional distinct imports without losing approved records/drafts.
       0-> why are we only supported png. what are general used images orfile for/expected target users while using the app. right now i see only png and jpg
       used images case study 2 like you say it hit limits after 30ish number( have couple your and my eary images along with text images.
-      
+
 - [x] H13 Generated EXIF-rotated JPEG has the expected upright preview and OCR. Automated encoded-orientation coverage pending.
     0-> case study 3 indeed detected the text ( with few text jumbling), though preview itself i didnt check beacuse image i used have muliple oreintation
 - [x] H14 Repeat G01–G06 for click areas, expanded source evidence and blank-approval protection after this build.
@@ -777,4 +781,3 @@ Current checkpoint **integration-20** (October 4, 2026): 39 automated tests PASS
 new process crash drill or current native rebuild. Protected native signing/
 Keychain/UI/recovery acceptance remains PENDING; no old UI checkbox verifies the
 new protected window. Personal data must not be imported into persistent mode.
-

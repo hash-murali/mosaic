@@ -11,4 +11,3 @@ Commands, build, devices and actual outcomes. Mark unexecuted checks pending.
 Authorization, privacy, keys, model prompts, migrations, exports and recovery.
 
 ## Documentation and remaining limitations
-
