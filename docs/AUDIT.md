@@ -216,3 +216,5 @@ Testing tests passed with zero failures. No personal data fixtures were used.
 Version file: `VERSION`. Release tag: `v0.1.0`. Branch: `main`.
 Use `git rev-parse v0.1.0` to resolve the immutable release commit after tagging.
 No GitHub publishing is performed without a configured and confirmed destination.
+
+- [v0.1.2 handoff01](evidence/builds/v0.1.2-20261011-handoff-01.md): documentation-only transition; no app build/tests applicable, git diff --check PASS. Issue13 design scope, issue12 deferred validation preserved.

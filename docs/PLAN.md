@@ -1,5 +1,18 @@
 # Project Mosaic plan
 
+## Active next target — v0.1.2 content-first workspace
+
+Foundation candidate published and PR11 merged under explicit deferred-validation
+approval;59 merged-source tests PASS. Main receipt86f1fee, immutable rc.1 tag0ad4b1f.
+[Issue13](https://github.com/hash-murali/mosaic/issues/13) owns next scope; active
+branch codex/v0.1.2-13-content-first. Content-first Library/responsive detail, icon
+actions and separate explicit edit task window follow existing owner direction.
+Design/spec review precedes new implementation. Existing #1/#2 reliability stays
+open; unsupported features stay Planned/TODO. Deferred validation #12 and quiet
+reminder survive version transition. This handoff is documentation only, no new
+app build, native acceptance or v0.1.2 feature completion claimed.
+
+
 - [v0.1.1-20261011-main-76](evidence/builds/v0.1.1-20261011-main-76.md): Explicitly approved candidate integrated into main. PASS: owner explicitly answers Approve candidate merge with deferred validation, resolving prior conditional-authorization rejection. Local main fast-forward90fad5202b4de34e52a544327759433c37c5328e;fresh full SwiftPM build6.10 seconds59tests zerofailures;normal non-force main push succeeds. Output .verification/main-merged-tests-20261011.txt; full local-cache command. GitHub browser verifies PR11 Merged ninecommits. No deferred gate passed by inference. Native app source unchanged from candidate70/71; no extra native rebuild needed. Annotated rc.1 still resolves0ad4b1f; stable v0.1.0 unchanged. Post-merge documentation receipt to follow; runtime/owner/IDE files preserved.
 
 - [v0.1.1-20261011-publish-75](evidence/builds/v0.1.1-20261011-publish-75.md): Immutable candidate prerelease published. PASS: annotated v0.1.1-rc.1 tag pushed and GitHub prerelease published from commit0ad4b1f1fe5e93c58fa024376c3d876cdaceb892; browser verifies Pre-release label, existing-tag commit and explicit deferred validation notes. Release URL https://github.com/hash-murali/mosaic/releases/tag/v0.1.1-rc.1. PR11 remains OPEN, main merge automatically rejected and not bypassed. Issue12 checklist/reminder and issue10 dispositions complete; stable v0.1.0 remains unchanged/latest. Source-only publication; no binaries/runtime/owner documents. Documentation-only: app tests not applicable,59-test current candidate evidence70/71 preserved. Screenshot proof saved outside Git. Next v0.1.2 handoff ready; main merge needs explicit deferred-risk approval.

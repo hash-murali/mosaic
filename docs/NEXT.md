@@ -1,5 +1,9 @@
 # Next development — v0.1.2
 
+Authoritative scope: [issue13](https://github.com/hash-murali/mosaic/issues/13).
+Branch: codex/v0.1.2-13-content-first, based on approved main integration.
+No v0.1.2 product behavior is implemented yet.
+
 Owner authorizes moving on after v0.1.1-rc.1 scoped audit/publication. Main design:
 content first, icons as secondary actions, explicit separate edit task window,
 Library side detail when wide and below when narrow. Keep one protected collection;
