@@ -1,5 +1,7 @@
 # Project Mosaic plan
 
+- [v0.1.1-20261011-publish-74](evidence/builds/v0.1.1-20261011-publish-74.md): Main merge blocked; branch-only candidate release. BLOCKED: automatic approval review rejects PR11 merge into main because earlier authorization was conditional on stability and native/recovery/fault/memory checks remain deferred. No workaround, command-line merge or main push attempted. Main remains dbf1937503e8446598979a0147b184a24d9f251f; candidate branch cf02e78. Safer branch-only prerelease publication authorized by current user request continues. Explicit approval needed to merge with deferred gates. Documentation-only; no new app tests applicable. API403 history preserved; browser PR11/issue12/audit issue10 succeeded. Reminder/checklist installed; runtime and owner documents preserved/excluded.
+
 - [v0.1.1-20261011-publish-73](evidence/builds/v0.1.1-20261011-publish-73.md): GitHub browser publication and reconciliation. PASS: candidate commits aee0439/e42dc16 pushed; authorized signed-in browser creates PR11 and deferred-validation issue12, then records explicit dispositions for existing issues1-10 on issue10. API403 history preserved; browser succeeds without changing connection permissions. No unsupported closure of partially accepted issues. Documentation-only: no fresh app tests needed; source unchanged from59-test/native candidate70/71. Staged whitespace fixed and pack checksum updated; pack validator PASS24checks. Main merge/tag/release pending.
 
 - [v0.1.1-20261011-publish-72](evidence/builds/v0.1.1-20261011-publish-72.md): Candidate commit push and API limitations. PASS: audited synthetic publication boundary scan184 files, commit aee0439 pushed to origin/codex/v0.1.1-1-review-drafts. GitHub issue/PR creation API403 remains BLOCKED; no PR created. Staged diff check found preexisting trailing whitespace in newly tracked inspection/pack templates; follow-up strips whitespace and updates pack checksum manifest. Documentation-only follow-up, app tests not applicable;59-test/native/probe/process evidence unchanged. No owner private inspection document, runtime data or IDE state committed. Candidate unverified checks remain deferred; stable tag not claimed.
@@ -1008,3 +1010,11 @@ export enforcement remain unimplemented.
   because an existing demo could contain personal test images. Prior user passes
   apply to the earlier build. GitHub reconciliation/publication remains pending;
   no external writes, release tag or stable v0.1.1 publication performed.
+
+## Candidate integration boundary — October11
+
+PR11 and deferred issue12 published using authorized GitHub browser; audit issue10
+records backlog dispositions. Auto-review rejects main merge because existing
+permission was conditional on stable validation. Keep main untouched; branch-only
+rc.1 prerelease is the safe alternative. Owner must explicitly approve merging
+with deferred gates before that final action. No bypass attempted.
